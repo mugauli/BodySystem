@@ -168,72 +168,116 @@
 				</div>
 				<div class="col-md-4 col-sm-12 col-lg-4">
 					<div class="form-group">
-					    <label class="required" for="txtNombre">Apellido paterno</label>
-					    <input type="text" class="form-control neew-control" id="txtNombre" placeholder="">
+					    <label class="required" for="txtApellidoPaterno">Apellido paterno</label>
+					    <input type="text" class="form-control neew-control" id="txtApellidoPaterno" placeholder="">
 					</div>
 				</div>
 					<div class="col-md-4 col-sm-12 col-lg-4">
 					<div class="form-group">
-					    <label class="required" for="txtNombre">Apellido materno</label>
-					    <input type="text" class="form-control neew-control" id="txtNombre" placeholder="">
+					    <label class="required" for="txtApellidoMaterno">Apellido materno</label>
+					    <input type="text" class="form-control neew-control" id="txtApellidoMaterno" placeholder="">
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-2 col-sm-12 col-lg-2">
 					<div class="form-group">
-					    <label class="required" for="txtNombre">Sexo</label>
-					    <input type="text" class="form-control neew-control" id="txtNombre" placeholder="">
+					    <label class="required" for="rbSexo">Sexo</label>
+					    <div>
+						    <label class="custom-control custom-checkbox">
+							  	<input value="M" name="rbSexo" id="rbSexo1" type="radio" class="custom-control-input">
+							  	<span class="custom-control-indicator"></span>
+							  	<span class="custom-control-description">M</span>
+							</label>
+							<label class="custom-control custom-checkbox">
+							  	<input value="H" name="rbSexo" id="rbSexo2" type="radio" class="custom-control-input">
+							  	<span class="custom-control-indicator"></span>
+							  	<span class="custom-control-description">H</span>
+							</label>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-2 col-sm-12 col-lg-2">
 					<div class="form-group">
 					    <label class="required" for="ddEdad">Edad</label>
 						<div class="select">
-						    <select name="select">						
+						    <select name="select" id="ddEdad">						
 						    	<option value="0">--</option>
 						    	<option value="1">Menor de 18 años</option>
-						    	<option value="1">De 18 a 25 años</option>
-						    	<option value="1">De 26 a 34 años</option>
-						    	<option value="1">De 35 a 44 años</option>
-						    	<option value="1">De 45 a 54 años</option>
-						    	<option value="1">55 o más años</option>
+						    	<option value="2">De 18 a 25 años</option>
+						    	<option value="3">De 26 a 34 años</option>
+						    	<option value="4">De 35 a 44 años</option>
+						    	<option value="5">De 45 a 54 años</option>
+						    	<option value="6">55 o más años</option>
 						    </select>
 						</div>
 					</div>
 				</div>
 					<div class="col-md-4 col-sm-12 col-lg-4">
 					<div class="form-group">
-					    <label class="required" for="txtNombre">Empresa</label>
-					    <input type="text" class="form-control neew-control" id="txtNombre" placeholder="">
+					    <label class="required" for="txtEmpresa">Empresa</label>
+					    <input type="text" class="form-control neew-control" id="txtEmpresa" placeholder="">
 					</div>
 				</div>	
 				<div class="col-md-4 col-sm-12 col-lg-4">
 					<div class="form-group">
-					    <label class="required" for="txtNombre">Cargo</label>
-					    <input type="text" class="form-control neew-control" id="txtNombre" placeholder="">
+					    <label class="required" for="txtCargo">Cargo</label>
+					    <input type="text" class="form-control neew-control" id="txtCargo" placeholder="">
 					</div>
 				</div>
 			</div>
 			<div class="row">				
 				<div class="col-md-4 col-sm-12 col-lg-4">
 					<div class="form-group">
-					    <label class="required" for="txtNombre">País</label>
+					    <label class="required" for="ddPais">País</label>
 						<div class="select">
-						    <select name="select">						
-						    	<option>--</option>
-						    	<option></option>
+						    <select name="select" id="ddPais">						
+						    	<option value="0">--</option>						    	
+						    	<option value="3">Canadá</option>
+						    	<option value="2">Estados Unidos</option>
+						    	<option value="1">México</option>
 						    </select>
 						</div>
 					</div>
 				</div>
 					<div class="col-md-4 col-sm-12 col-lg-4">
 					<div class="form-group">
-					    <label class="required" for="txtNombre">Ciudad</label>
+					    <label class="required" for="ddCiudad">Ciudad</label>
 					    <div class="select">
-						    <select name="select">						
-						    	<option>--</option>
-						    	<option></option>
+						    <select name="select" id="ddCiudad" disabled="">						    	
+						    	<option value="0">--</option>						    	
+								<option value="1">Aguascalientes</option>
+								<option value="2">Baja California</option>
+								<option value="3">Baja California Sur</option>
+								<option value="4">Campeche</option>
+								<option value="5">Chiapas</option>
+								<option value="6">Chihuahua</option>
+								<option value="9">Ciudad de México</option>
+								<option value="7">Coahuila</option>
+								<option value="8">Colima</option>
+								<option value="10">Durango</option>
+								<option value="11">Guanajuato</option>
+								<option value="12">Guerrero</option>
+								<option value="13">Hidalgo</option>
+								<option value="14">Jalisco</option>
+								<option value="15">M&eacute;xico</option>
+								<option value="16">Michoac&aacute;n</option>
+								<option value="17">Morelos</option>
+								<option value="18">Nayarit</option>
+								<option value="19">Nuevo Le&oacute;n</option>
+								<option value="20">Oaxaca</option>
+								<option value="21">Puebla</option>
+								<option value="22">Quer&eacute;taro</option>
+								<option value="23">Quintana Roo</option>
+								<option value="24">San Luis Potos&iacute;</option>
+								<option value="25">Sinaloa</option>
+								<option value="26">Sonora</option>
+								<option value="27">Tabasco</option>
+								<option value="28">Tamaulipas</option>
+								<option value="29">Tlaxcala</option>
+								<option value="30">Veracruz</option>
+								<option value="31">Yucat&aacute;n</option>
+								<option value="32">Zacatecas</option>
 						    </select>
 						</div>
 					</div>
@@ -255,7 +299,7 @@
 				<div class="col-md-4 col-sm-12 col-lg-4">
 					<div class="form-group">					    
 						<div class="select" id="select-1" style="display:none;">
-						    <select name="select" >
+						    <select name="select" id="ddSubperfil1">
 						    	<option value="0">--</option>						    	
 						    	<option value="1">Accesorios</option>
 								<option value="2">Audio</option>
@@ -275,7 +319,7 @@
 						    </select>
 						</div>
 						<div class="select" id="select-2" style="display:none;">
-						    <select name="select">	
+						    <select name="select" id="ddSubperfil2">	
 						    	<option value="0">--</option>						    	
 						    	<option value="1">Box de Crossfit</option>
 								<option value="2">Centro de Rehabilitación</option>
@@ -298,7 +342,7 @@
 		<div class="etapas" id="tab-3" style="display:none;">
 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-lg-12">
-					<div class="card-columns">
+					<div class="card-columns" id="servicios">
   						<div data-value="1" class="card p-3 text-center">
 						    <blockquote class="card-blockquote">
 						      	<p>Accesorios</p>	
@@ -375,7 +419,7 @@
 		</div>
 		<div class="etapas" id="tab-4" style="display:none;">
 			<div class="row">
-				<div class="col-md-12 col-sm-12 col-lg-12">
+				<div class="col-md-12 col-sm-12 col-lg-12" id="pase">
 					<div class="card-group">
   						<div data-value="1" class="card p-3 text-center">
 						    <blockquote class="card-blockquote">
@@ -444,6 +488,13 @@
   					</div>
 				</div>
 			</div>
+			<div class="etapas" id="tab-5" style="height:200px;display:none;">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-lg-12">
+						<h3>Gracias por su registro!</h3>
+					</div>
+				</div>
+			</div>
 		</div>
 	</form>
 	<div class="text-center" style="margin-top:50px;">
@@ -495,7 +546,23 @@
 	$(function(){
 
 		var perfil= 0;
-		var etapa=1;
+		var etapa=2;
+
+		var registro={
+			Nombre: '',
+            ApellidoPaterno: '',
+            ApellidoMaterno: '',
+            Sexo: '',
+            Edad: 0,
+            Empresa: '',
+            Cargo: '',
+            Ciudad: 0,
+            Pais: 0,
+            Perfil: 0,
+            SubPerfil: 0,
+            IdTipoPase: 0,
+            ServiciosInteres: []
+		};
 
 		$("#btn-menu-close").click(function(){
 			$("#menu-burger").hide();
@@ -505,25 +572,134 @@
 			$("#menu-burger").show();
 		});
 
-		$("#btn-avance").click(function(){
-			if(etapa<4){
-				etapa++;
-				 $(".etapas").hide();
-				 $(".registro-breadcrumb").removeClass('active');
+		$("#btn-avance").click(function(){			
+			if(etapa<=5){
 				switch(etapa){
 					case 1: $("#tab-1").show();
-							$("#bread1").addClass('active');
+							$("#bread1").addClass('active');							
 							break;
-					case 2: $("#tab-2").show();
+					case 2: 					
+							registro.Nombre=$("#txtNombre").val();
+							registro.ApellidoPaterno=$("#txtApellidoPaterno").val();
+							registro.ApellidoMaterno=$("#txtApellidoMaterno").val();
+							registro.Sexo= $("input[name=rbSexo]:checked").val();
+							registro.Edad=parseInt($("#ddEdad").val());
+							registro.Empresa=$("#txtEmpresa").val();
+							registro.Cargo=$("#txtCargo").val();
+							registro.Ciudad=parseInt($("#ddCiudad").val());
+							registro.Pais=parseInt($("#ddPais").val());							
+							if(registro.Nombre==''){
+								alert('El nombre es obligatorio');
+								return false;
+							}
+							if(registro.ApellidoPaterno==''){
+								alert('El apellido paterno es obligatorio');
+								return false;
+							}
+							if(!registro.Sexo){
+								alert('Selecciona tu sexo');
+								return false;
+							}
+							if(registro.Edad==0){
+								alert('Selecciona un rango de edad');
+								return false;
+							}
+							if(registro.Empresa==''){
+								alert('El nombre de la empresa es obligatorio');
+								return false;
+							}
+							if(registro.Cargo==''){
+								alert('Su cargo es obligatorio');
+								return false;
+							}
+							if(registro.Pais==0){
+								alert('Selecciona un país');
+								return false;
+							}
+							if(registro.Pais==1 && registro.Ciudad==0){
+								alert('Selecciona una ciudad');
+								return false;
+							}
+							$(".etapas").hide();
+				 			$(".registro-breadcrumb").removeClass('active');
+							$("#tab-2").show();
 							$("#bread2").addClass('active');
+							etapa++;
 							break;
-					case 3: $("#tab-3").show();
+					case 3: 							
+							if($('.item-perfil.active').length>0) {								
+								registro.Perfil=parseInt($('.item-perfil.active:first').data('perfil'));
+								if(registro.Perfil==1)
+									registro.SubPerfil=parseInt($('#ddSubperfil1').val());
+								else if(registro.Perfil==4)
+									registro.SubPerfil=parseInt($('#ddSubperfil2').val());
+								else 
+									registro.SubPerfil=0;								
+							}
+
+							if(!registro.Perfil) {
+								alert('Seleccione el perfil al que pertenece');
+								return false;
+							}
+							if((registro.Perfil==1 || registro.Perfil==4) && registro.SubPerfil==0) {
+								alert('Seleccione un subperfil de la lista');
+								return false;
+							}
+
+							$(".etapas").hide();
+				 			$(".registro-breadcrumb").removeClass('active');
+							$("#tab-3").show();
 							$("#bread3").addClass('active');
+							etapa++;
 							break;
-					case 4: $("#tab-4").show();
+					case 4:							
+							if($('#servicios .card.active').length>0) {								
+								$('#servicios .card.active').each(function(i,item){
+									registro.ServiciosInteres.push(parseInt($(this).data('value')));
+								});							
+							} else {
+								alert('Seleccione los servicios en los que está interesado');
+								return false;
+							}
+							if((registro.Perfil==1 || registro.Perfil==4) && registro.SubPerfil==0) {
+								alert('Seleccione un subperfil de la lista');
+								return false;
+							}
+
+							$(".etapas").hide();
+				 			$(".registro-breadcrumb").removeClass('active');
+							$("#tab-4").show();
 							$("#bread4").addClass('active');
 							$(this).html('ENVIAR');
+							etapa++;
 							break;
+					case 5:							
+							if($('#pase .card.active').length>0) {								
+								registro.IdTipoPase =parseInt($('#pase .card.active:first').data('value'));								
+							} else {
+								alert('Seleccione su pase para el evento');
+								return false;
+							}							
+
+							var jsonR = "[" + JSON.stringify(registro) + "]";
+							alert(jsonR);
+							$.ajax({ 
+							   	type: "POST",							   
+							   	data: {
+							   		json: jsonR
+							   	},
+							   	url: "http://grapesoft-001-site23.ctempurl.com/Umbraco/Api/GuardarRegistro",
+							   	success: function(data){
+							   		alert(data);
+							    	 console.log(data);
+
+							   	},
+							   	 error: function (xhr, ajaxOptions, thrownError) {
+					                    alert(thrownError);
+					                }
+							});
+							break;
+						break;
 				}
 			}
 		});
@@ -582,6 +758,25 @@
 		$(".list-group-item-action").click(function(){
 			$(".list-group-item-action").removeClass("active");
 			$(this).addClass("active");
+		});
+
+
+		$("#ddPais").change(function(){
+			var valor=$(this).val();
+			if(valor=="1"){
+				$("#ddCiudad").removeAttr('disabled');
+				$("#ddCiudad").val("0");
+			} else {
+				$("#ddCiudad").attr('disabled','disabled');
+				$("#ddCiudad").val("0");
+			}
+		});
+
+		$("input[type='text']").change(function(){
+			var valor=$(this).val();
+			if(valor!=""){
+				$(this).val($(this).val().toUpperCase())
+			}
 		});
 	});
 	
