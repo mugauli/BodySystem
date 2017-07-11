@@ -148,6 +148,9 @@
 			<div class="col-2 registro-breadcrumb" id="bread4">
 				SELECCIÓN DE PASE
 			</div>	
+			<div class="col-2 registro-breadcrumb" id="bread5">
+				REGISTRO CONCLUIDO
+			</div>
 			<div class="col-1 registro-breadcrumb">
 				&nbsp;
 			</div>		
@@ -681,26 +684,36 @@
 								return false;
 							}							
 
-							var jsonR = "[" + JSON.stringify(registro) + "]";
-							alert(jsonR);
+							var jsonR = "[" + JSON.stringify(registro) + "]";							
 							$.ajax({ 
-							   	type: "POST",							   
+							   	type: "GET",							   
 							   	data: {
 							   		json: jsonR
 							   	},
-							   	url: "http://grapesoft-001-site23.ctempurl.com/Umbraco/Api/GuardarRegistro",
+							   	url: "http://grapesoft-001-site23.ctempurl.com/Umbraco/Api/BodySystem/GuardarRegistro",
 							   	success: function(data){
-							   		alert(data);
-							    	 console.log(data);
+							   		if(data){
+							    	 	$(".etapas").hide();
+							 			$(".registro-breadcrumb").removeClass('active');
+										$("#tab-5").show();
+										$("#bread5").addClass('active');
+										$(this).html('SALIR');
+										etapa++;
+							   		} else {
+							   			console.log(data);
+							   		}
 
 							   	},
 							   	 error: function (xhr, ajaxOptions, thrownError) {
 					                    alert(thrownError);
 					                }
 							});
+
 							break;
 						break;
 				}
+			} else {
+	            window.location.href = './home.html';
 			}
 		});
 
