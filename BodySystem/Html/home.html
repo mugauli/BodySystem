@@ -13,6 +13,7 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body class="bghome">
+<!-- menu lateral -->
 <div id="menu-burger" style="display:none;">
 	<div id="menu-burger-close"><img id="btn-menu-close" src="assets/btn_close.png"></div>
 	<div id="menu-burger-options">		
@@ -26,36 +27,68 @@
 	</div>
 </div>
 
-<nav id="menu-scroll" class="navbar">
-    <div class="container">        
+<!-- menu lateral -->
+<div id="submenu" class="neew-submenu" style="display:none;">	
+	<div class="row">
+		<div class="submenu-logo">
+			<a class="navbar-brand"><img src="assets/scaled-at-75/logo4irhsa_color.png"  style="vertical-align:middle;"></a>
+		</div>
+		<div class="col" style="vertical-align:middle;">
+			<div class="row">
+				<div class="col submenu-block">
+					<a href="#">CONFERENCIAS</a>
+				</div>
+				<div class="col submenu-block">
+					<a href="#">MIÉRCOLES 25 DE OCTUBRE</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col submenu-block">
+					<a href="#">SEMINARIOS</a>
+				</div>
+				<div class="col submenu-block">
+					<a href="#">JUEVES 26 DE OCTUBRE</a>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+
+<!-- menu scroll -->
+<div id="menu-scroll" >
+    <nav class="navbar navbar-toggleable-md">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right align-self-center my-2" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <a class="navbar-brand"><img src="assets/scaled-at-75/evento.png"></a>
-        <div class="collapse navbar-collapse flex-column ml-lg-0 ml-3 " id="navbarCollapse">
-        	<ul class="navbar-nav flex-row mb-0 ml-auto nav-links">
+        <div class="collapse navbar-collapse flex-column ml-lg-0 ml-3 " id="navbarCollapse">        	 
+            <ul class="navbar-nav ml-auto nav-links">
                 <li class="nav-item">
-	                <a class="nav-link" href="#">4to. IHRSA MFMX</a>
-	            </li>
-	            <li class="nav-item">
-	                <a class="nav-link" href="#">FOROS ESPECIALIZADOS</a>
-	            </li>
-	            <li class="nav-item">
-	                <a class="nav-link" href="#">4to. CICADAF by SCU</a>
-	            </li>
-	            <li class="nav-item">
-	                <a class="nav-link" href="#">WOW FITNESS!</a>
-	            </li>
-	            <li class="nav-item">
-	                <a class="nav-link menu-burger-show" id="menu-burger-show" href="#" style="margin-top:-3px;"><img src="assets/scaled-at-75/menu.png"></a>
-	            </li>
-	            <li class="nav-item">
-	                <a class="nav-link" id="menu-top" href="#" style="margin-top:-3px;"><img src="assets/scaled-at-75/top_page.png"></a>
-	            </li>
-	        </ul>        
-	    </div>
+                    <a class="nav-link popover-menu" >4to. IHRSA MFMX</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FOROS ESPECIALIZADOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">4to. CICADAF by SCU</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">WOW FITNESS!</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-burger-show" href="#" style="margin-top:-3px;"><img src="assets/scaled-at-75/menu.png"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="#" style="margin-top:-3px;"><img src="assets/scaled-at-75/top_page.png"></a>
+                </li>
+            </ul>
+           
+        </div>
     </div>
-</nav>
-
-
-
+    </nav>
+</div>
+<!-- menu superior -->
 <nav class="navbar navbar-toggleable-md">
     <div class="container">
         <button class="navbar-toggler navbar-toggler-right align-self-center my-2" type="button" data-toggle="collapse" data-target="#navbarCollapse">
@@ -76,7 +109,7 @@
             </ul>
             <ul class="navbar-nav ml-auto nav-links">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">4to. IHRSA MFMX</a>
+                    <a class="nav-link popover-menu">4to. IHRSA MFMX</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">FOROS ESPECIALIZADOS</a>
@@ -95,6 +128,7 @@
         </div>
     </div>
 </nav>
+<!-- Contenedor -->
 <div class="container">
 	<section>
 		<div class="row py-2" style="margin-top:200px;">
@@ -177,6 +211,8 @@
 	<img class="modal-content" id="largeImage">
 	<div id="caption"></div>
 </div>
+
+<!-- footer -->
 <div class="container footer">
 	<div class="container">
 		<div class="row nav-links">
@@ -217,21 +253,29 @@
 </div>
 <script>
 	$(function(){
+
+
+		$("#btn-menu-close").click(function(){
+			$("#menu-burger").hide();
+		});
+
+		$(".menu-burger-show").click(function(){
+			$("#menu-burger").show();
+		});
+
+		$(window).scroll(function(){                          			
+            if ($(this).scrollTop() > 300) {
+                $('#menu-scroll').show();
+            } else {
+                $('#menu-scroll').hide();                
+            }
+        });
+
+
 		var modal = $('#myModal');		
 		var pagina = 1;
 		var modalImg = $("#largeImage");
 		var captionText = $("#caption");
-
-		$('.gallery-item').on('click', function(){			
-		    modal.css('display','block');
-		    modalImg.attr('src',this.src);
-		    captionText.text(this.alt);
-		});
-				
-		$('.close').on('click', function(){
-			modal.style.display = "none";
-		});
-
 
 		var cambiaImagenes=function(){
 			$("#top-image").attr('src','assets/gallery'+(((pagina-1)*4)+1)+'.jpg');
@@ -255,21 +299,38 @@
 			cambiaImagenes();
 		});
 
-		$("#btn-menu-close").click(function(){
-			$("#menu-burger").hide();
+		$('.gallery-item').on('click', function(){			
+		    modal.css('display','block');
+		    modalImg.attr('src',this.src);
+		    captionText.text(this.alt);
+		});
+				
+		$('.close').on('click', function(){
+			modal.style.display = "none";
 		});
 
-		$(".menu-burger-show").click(function(){
-			$("#menu-burger").show();
+		$('.popover-menu').popover({
+		    placement: 'bottom',
+		    html: true,
+		    trigger: 'manual',
+		    content: function() {
+		    	return $('#submenu').html();
+		    }		    
+		}).on("mouseenter", function () {
+			var _this = this;
+			$(this).popover("show");
+			$(".popover").on("mouseleave", function () {
+			    $(_this).popover('hide');
+			});
+		}).on("mouseleave", function () {
+			var _this = this;
+			setTimeout(function () {
+			    if (!$(".popover:hover").length) {
+			        $(_this).popover("hide");
+			    }
+			}, 300);
 		});
-
-		$(window).scroll(function(){                          
-            if ($(this).scrollTop() > 200) {
-                $('#menu-scroll').fadeIn(500);
-            } else {
-                $('#menu-scroll').fadeOut(500);
-            }
-        });
+		
 	});
 	
 

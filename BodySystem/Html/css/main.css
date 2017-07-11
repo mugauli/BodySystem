@@ -552,9 +552,60 @@ hr {
 	left: 0px;
 	width: 100%;
 	z-index: 99;
-	display: none;
+	display: none;	
 }
 
-#menu-scroll li a{ 
-	color: #fff;
+#menu-scroll .navbar{
+	padding: 0;
+}
+
+.nav-links a{
+	font-weight: 600;
+}
+
+
+.nav-links a:hover{ 
+	color : var(--light-cyan);
+}
+
+
+.neew-submenu {
+	background-color: #fff;
+	color: #000;
+	width:752px;
+	height:1em;
+}
+
+
+.popover-menu {
+	cursor: pointer;
+}
+.popover .submenu-block{	
+	height:1em;
+	line-height: 1em;
+}
+
+.popover a{	
+	color: #000;	
+	text-decoration: none;
+	font-weight: 700;
+	font-family: "Gotham Book";
+	font-size: 0.7em
+}
+
+
+
+.popover a:hover{	
+	color: var(--light-cyan);
+	
+}
+
+.popover-content {
+    padding: 10px 20px;
+}
+
+.popover {
+	max-width: 750px;
+	border-radius: 0;
+	min-width: 550px;
 }
