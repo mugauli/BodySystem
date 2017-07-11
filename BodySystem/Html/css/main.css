@@ -140,6 +140,7 @@ input.neew-control {
 input[type='text'] {
 	text-transform: uppercase;
 }
+
 textarea.neew-control {
 	background: rgba(255,255,255,0.3);
 	border-radius: 0;
@@ -296,6 +297,24 @@ select.neew-control:after {
 hr {
 	border-color:#333;
 }
+
+	
+.bgcontacto{
+	background-image: url(../assets/bgcontacto.png) ;
+	//background-position: center center;
+	background-repeat:  no-repeat;	
+	background-size:  contain;
+	background-color: #000;
+}
+
+.bghome{
+	background-image: url(../assets/bghome.png) ;
+	//background-position: center center;
+	background-repeat:  no-repeat;	
+	background-size:  contain;
+	background-color: #000;
+}
+
 
 
 .button-2{
