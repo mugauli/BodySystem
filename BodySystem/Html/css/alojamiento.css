@@ -1,0 +1,159 @@
+ body {
+     background-image: url(../assets/bgcontacto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+
+ }
+
+.titleMain {
+    text-align: center;
+    font-weight: bold;
+    color: #ec1c49;
+    margin: 10%;
+}
+
+.btnMoreInfoAloja {
+}
+
+.intBtn {
+    width: 78%;
+    background: #ec1c49;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 10px;
+    cursor: pointer;
+    margin: -44px 11% 10px 11%;
+    position: relative;
+}
+
+    .intBtn:hover {
+        background: #1188ad;
+        cursor: pointer;
+    }
+
+.imageAloja {
+}
+
+    .imageAloja img {
+        width: 92%;
+        margin: 4%;
+    }
+
+.titleAloja {
+    text-align: center;
+    margin: 3% 10%;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.addressAloja {
+    margin: 3% 10%;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+    height: 70px;
+    overflow-y: hidden;
+}
+
+.phoneAloja {
+    margin: 3% 10%;
+    font-size: 15px;
+    text-align: center;
+    color: #6ecadc;
+    font-weight: normal;
+}
+
+.emailAloja {
+    margin: 3% 10%;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+}
+
+.divAloja {
+    margin: 6% 32%;
+    border-top: 3px solid #ec1c49;
+}
+
+.emailAloja a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ec1c49 !important;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+    .emailAloja a:hover {
+        color: #1188ad !important;
+    }
+#detalleAloja {
+    position: fixed;
+    z-index: 100;
+    background: rgba(0,0,0,0.8);
+    width: 100vw;
+    left: 0;
+    border-top: 1px solid #ec1c49;
+    border-bottom: 1px solid #ec1c49;
+    display: none;
+}
+
+.emailAlojaDet {
+    margin: 3% 10%;
+    font-size: 12px;
+    text-align: left;
+    color: #fff;
+    font-weight: normal;
+}
+
+.titleAlojaDet {
+    text-align: left;
+    margin: 3% 10%;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.addressAlojaDet {
+    margin: 3% 10%;
+    font-size: 12px;
+    text-align: left;
+    color: #fff;
+    font-weight: normal;
+    height: 70px;
+    overflow-y: hidden;
+}
+
+.phoneAlojaDet {
+    margin: 3% 10%;
+    font-size: 15px;
+    text-align: left;
+    color: #6ecadc;
+    font-weight: normal;
+}
+
+.emailAlojaDet a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ec1c49 !important;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+    .emailAlojaDet a:hover {
+        color: #1188ad !important;
+    }
+#carouselExampleControls {
+    margin: 8%;
+}
+
+    #carouselExampleControls .img-stretch {
+        width: 100%;
+    }
+#btnClose {
+    margin: 1%;
+    cursor: pointer;
+    float: right;
+}

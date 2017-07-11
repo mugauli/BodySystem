@@ -1,0 +1,14 @@
+ body {
+     background-image: url(../assets/bgcontacto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+
+ }
+
+.titleMain {
+    text-align: center;
+    font-weight: bold;
+    color: #ec1c49;
+    margin: 10%;
+}

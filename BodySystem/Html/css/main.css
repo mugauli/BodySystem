@@ -293,24 +293,6 @@ hr {
 	border-color:#333;
 }
 
-	
-.bgcontacto{
-	background-image: url(../assets/bgcontacto.png) ;
-	//background-position: center center;
-	background-repeat:  no-repeat;	
-	background-size:  contain;
-	background-color: #000;
-}
-
-.bghome{
-	background-image: url(../assets/bghome.png) ;
-	//background-position: center center;
-	background-repeat:  no-repeat;	
-	background-size:  contain;
-	background-color: #000;
-}
-
-
 
 .button-2{
   width:140px;
