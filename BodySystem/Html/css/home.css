@@ -1,0 +1,16 @@
+
+body {
+    background-image: url(../assets/bghome.png);
+    //background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #000;
+}
+
+#btnRegistro {
+    color: #ec1c49;
+}
+
+#btnRegistro:hover {
+    color: #fff;
+}

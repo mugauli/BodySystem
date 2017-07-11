@@ -1,0 +1,71 @@
+body {
+    background-image: url(../assets/bgcontacto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+}
+
+.titleMain {
+    text-align: center;
+    font-weight: bold;
+    color: #ec1c49;
+    margin: 10%;
+}
+
+.titleMain2 {
+    text-align: center;
+    color: #fff;
+}
+
+.iconoSede {
+}
+
+.btnMoreInfoAloja {
+}
+
+.intBtn {
+}
+
+.mapSede {
+    width: 100%;
+    height: 400px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+#contMain {
+    margin-top: 8%;
+}
+
+.addressSede {
+    margin-top: 5%;
+    font-size: 12px;
+}
+
+.btnMoreInfoAloja {
+}
+
+.intBtn img {
+    width: 10%;
+    margin: 0% 3%;
+}
+
+.intBtn {
+    width: 78%;
+    background: #ec1c49;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 25px 0;
+    position: relative;
+}
+
+    .intBtn:hover {
+        background: #1188ad;
+        cursor: pointer;
+    }
