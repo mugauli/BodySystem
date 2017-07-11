@@ -3,6 +3,7 @@
 	--cyan: #1188ad;
 	--light-cyan: #6eccdd;
 	--dark-gray: #313131;
+	--light-gray: #aaa;
 	--white: #fff;
 }
 
@@ -297,7 +298,7 @@ hr {
 	background-image: url(../assets/bgcontacto.png) ;
 	//background-position: center center;
 	background-repeat:  no-repeat;	
-	background-size:  cover;
+	background-size:  contain;
 	background-color: #000;
 }
 
@@ -305,7 +306,7 @@ hr {
 	background-image: url(../assets/bghome.png) ;
 	//background-position: center center;
 	background-repeat:  no-repeat;	
-	background-size:  cover;
+	background-size:  contain;
 	background-color: #000;
 }
 
@@ -542,7 +543,7 @@ hr {
 }
 
 *:focus {
-    outline: none;
+    outline: none !important;
 }
 
 #menu-scroll{ 
@@ -608,4 +609,71 @@ hr {
 	max-width: 750px;
 	border-radius: 0;
 	min-width: 550px;
+}
+
+
+.list-group-item{
+	background-color: var(--dark-gray);
+	color: #fff;
+}
+
+.list-group-item:first-child, .list-group-item:last-child {
+	border-radius: 0px;
+}
+
+.list-group-item-action:focus, .list-group-item-action:hover {
+	background-color: var(--cyan);
+	color: #fff;
+}
+
+.list-group-item-action.active {
+	background-color: var(--fuscia);
+	color: #fff;
+	border: none !important;
+}
+
+.list-group-item-action:focus {
+	border-top: 1px solid var(--cyan);
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+}
+
+
+.card{
+	background-color: var(--dark-gray);
+	border-radius: 0px;
+	border: none;	
+	cursor: pointer;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.card-blockquote {
+	color:#fff;
+}
+
+.card.active{
+	background-color: var(--fuscia);	
+}
+
+.card.active .card-blockquote{
+	color:#fff;
+}
+
+.card:hover{
+	background-color: var(--cyan);
+	border-radius: 0px;
+}
+
+.registro-breadcrumb.active{
+	border-bottom:2px solid #ec1C49;color:#fff;
+}
+.registro-breadcrumb{
+text-align:center;border-bottom:1px solid #666;margin-bottom:40px;color:#666;
 }
