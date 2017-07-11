@@ -136,6 +136,10 @@ input.neew-control {
 	height: 48px;
 	color: #fff;
 }
+
+input[type='text'] {
+	text-transform: uppercase;
+}
 textarea.neew-control {
 	background: rgba(255,255,255,0.3);
 	border-radius: 0;
@@ -221,7 +225,7 @@ select.neew-control:after {
 
 .select option {
     margin: 40px;
-    background: rgba(0, 0, 0, 0.7);
+    background: var(--light-gray);
     color: #000;    
     height: 48px;
 }
@@ -658,4 +662,30 @@ hr {
 }
 .registro-breadcrumb{
 text-align:center;border-bottom:1px solid #666;margin-bottom:40px;color:#666;
+}
+
+.custom-checkbox .custom-control-input:indeterminate~.custom-control-indicator{
+	background-color: var(--fuscia);
+}
+
+.custom-control-indicator{
+	width:1.5rem;
+	height:1.5rem;	
+	background-color: var(--light-gray);	
+}
+
+.custom-control-input:checked~.custom-control-indicator{
+	background-color: var(--fuscia);
+}
+
+.custom-control-description{
+	margin-left:0.5rem;
+	font-size:1rem;
+	line-height: 2rem;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
