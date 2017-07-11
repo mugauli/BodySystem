@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<title>NEEW .:::. Contacto</title>
+	<title>NEEW .:::. Home</title>
 	<!-- styles -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"></li>
 	<link rel="stylesheet" type="text/css" href="css/main.css"></li>	
@@ -13,7 +13,82 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body class="bgcontacto">
+<!-- menu lateral -->
+<div id="menu-burger" style="display:none;">
+	<div id="menu-burger-close"><img id="btn-menu-close" src="assets/btn_close.png"></div>
+	<div id="menu-burger-options">		
+		<a href="#">EXPOSITORES</a>
+		<a href="#">INVERSION</a>
+		<a href="#">SEDE / ¿CÓMO LLEGAR?</a>
+		<a href="#">ALOJAMIENTO</a>
+	</div>
+	<div id="menu-burger-search">
+		<input type="text" id="search">
+	</div>
+</div>
 
+<!-- menu lateral -->
+<div id="submenu" class="neew-submenu" style="display:none;">	
+	<div class="row">
+		<div class="submenu-logo">
+			<a class="navbar-brand"><img src="assets/scaled-at-75/logo4irhsa_color.png"  style="vertical-align:middle;"></a>
+		</div>
+		<div class="col" style="vertical-align:middle;">
+			<div class="row">
+				<div class="col submenu-block">
+					<a href="#">CONFERENCIAS</a>
+				</div>
+				<div class="col submenu-block">
+					<a href="#">MIÉRCOLES 25 DE OCTUBRE</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col submenu-block">
+					<a href="#">SEMINARIOS</a>
+				</div>
+				<div class="col submenu-block">
+					<a href="#">JUEVES 26 DE OCTUBRE</a>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+
+<!-- menu scroll -->
+<div id="menu-scroll" >
+    <nav class="navbar navbar-toggleable-md">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right align-self-center my-2" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand"><img src="assets/scaled-at-75/evento.png"></a>
+        <div class="collapse navbar-collapse flex-column ml-lg-0 ml-3 " id="navbarCollapse">        	 
+            <ul class="navbar-nav ml-auto nav-links">
+                <li class="nav-item">
+                    <a class="nav-link popover-menu" >4to. IHRSA MFMX</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FOROS ESPECIALIZADOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">4to. CICADAF by SCU</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">WOW FITNESS!</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-burger-show" href="#" style="margin-top:-3px;"><img src="assets/scaled-at-75/menu.png"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="#" style="margin-top:-3px;"><img src="assets/scaled-at-75/top_page.png"></a>
+                </li>
+            </ul>
+           
+        </div>
+    </div>
+    </nav>
+</div>
+<!-- menu superior -->
 <nav class="navbar navbar-toggleable-md">
     <div class="container">
         <button class="navbar-toggler navbar-toggler-right align-self-center my-2" type="button" data-toggle="collapse" data-target="#navbarCollapse">
@@ -34,7 +109,7 @@
             </ul>
             <ul class="navbar-nav ml-auto nav-links">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">4to. IHRSA MFMX</a>
+                    <a class="nav-link popover-menu">4to. IHRSA MFMX</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">FOROS ESPECIALIZADOS</a>
@@ -46,103 +121,340 @@
                     <a class="nav-link" href="#">WOW FITNESS!</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="margin-top:-3px;"><img src="assets/scaled-at-75/menu.png"></a>
+                    <a class="nav-link menu-burger-show" id="menu-burger-show" href="#" style="margin-top:-3px;"><img src="assets/scaled-at-75/menu.png"></a>
                 </li>
             </ul>
            
         </div>
     </div>
 </nav>
+<!-- Contenedor -->
 <div class="container">
+	<h3>REGISTRO</h3>
+	<div class="step-info" >
+		<div class="row" style="text-align:center;">
+			<div class="col-1 registro-breadcrumb">
+				&nbsp;
+			</div>
+			<div class="col-2 registro-breadcrumb active" id="bread1">
+				DATOS PERSONALES
+			</div>
+			<div class="col-2 registro-breadcrumb" id="bread2">
+				PERFIL DEL PARTICIPANTE
+			</div>
+			<div class="col-2 registro-breadcrumb" id="bread3">
+				SERVICIOS DE INTERÉS
+			</div>
+			<div class="col-2 registro-breadcrumb" id="bread4">
+				SELECCIÓN DE PASE
+			</div>	
+			<div class="col-1 registro-breadcrumb">
+				&nbsp;
+			</div>		
+		</div>
+	</div>
 	<div class="container-centered">
-	<h2>CONTACTO</h2>
+	
+	
 	<form>
-		<div class="row">
-			<div class="col-md-4 col-sm-12 col-lg-4">
-				<div class="form-group">
-				    <label class="required" for="txtNombre">Nombre(s)</label>
-				    <input type="text" class="form-control neew-control" id="txtNombre" placeholder="Example input">
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-12 col-lg-4">
-				<div class="form-group">
-				    <label class="required" for="txtNombre">Apellido paterno</label>
-				    <input type="text" class="form-control neew-control" id="txtNombre" placeholder="Example input">
-				</div>
-			</div>
+		
+		<div class="etapas" id="tab-1">
+			<div class="row">
 				<div class="col-md-4 col-sm-12 col-lg-4">
-				<div class="form-group">
-				    <label class="required" for="txtNombre">Apellido materno</label>
-				    <input type="text" class="form-control neew-control" id="txtNombre" placeholder="Example input">
+					<div class="form-group">
+					    <label class="required" for="txtNombre">Nombre(s)</label>
+					    <input type="text" class="form-control neew-control" id="txtNombre" placeholder="">
+					</div>
 				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4 col-sm-12 col-lg-4">
-				<div class="form-group">
-				    <label class="required" for="txtNombre">Correo electrónico</label>
-				    <input type="text" class="form-control neew-control" id="txtNombre" placeholder="Example input">
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-12 col-lg-4">
-				<div class="form-group">
-				    <label class="required" for="txtNombre">Confirmar correo electrónico</label>
-				    <input type="text" class="form-control neew-control" id="txtNombre" placeholder="Example input">
-				</div>
-			</div>
 				<div class="col-md-4 col-sm-12 col-lg-4">
-				<div class="form-group">
-				    <label class="required" for="txtNombre">Teléfono</label>
-				    <input type="text" class="form-control neew-control" id="txtNombre" placeholder="Example input">
+					<div class="form-group">
+					    <label class="required" for="txtNombre">Apellido paterno</label>
+					    <input type="text" class="form-control neew-control" id="txtNombre" placeholder="">
+					</div>
 				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4 col-sm-12 col-lg-4">
-				<div class="form-group">
-				    <label class="required" for="txtNombre">Ciudad</label>
-				    <input type="text" class="form-control neew-control" id="txtNombre" placeholder="Example input">
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-12 col-lg-4">
-				<div class="form-group">
-				    <label class="required" for="txtNombre">Asunto</label>
-					<div class="select">
-					    <select name="select">						
-					    	<option>--</option>
-					    	<option></option>
-					    </select>
+					<div class="col-md-4 col-sm-12 col-lg-4">
+					<div class="form-group">
+					    <label class="required" for="txtNombre">Apellido materno</label>
+					    <input type="text" class="form-control neew-control" id="txtNombre" placeholder="">
 					</div>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-md-2 col-sm-12 col-lg-2">
+					<div class="form-group">
+					    <label class="required" for="txtNombre">Sexo</label>
+					    <input type="text" class="form-control neew-control" id="txtNombre" placeholder="">
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-12 col-lg-2">
+					<div class="form-group">
+					    <label class="required" for="ddEdad">Edad</label>
+						<div class="select">
+						    <select name="select">						
+						    	<option value="0">--</option>
+						    	<option value="1">Menor de 18 años</option>
+						    	<option value="1">De 18 a 25 años</option>
+						    	<option value="1">De 26 a 34 años</option>
+						    	<option value="1">De 35 a 44 años</option>
+						    	<option value="1">De 45 a 54 años</option>
+						    	<option value="1">55 o más años</option>
+						    </select>
+						</div>
+					</div>
+				</div>
+					<div class="col-md-4 col-sm-12 col-lg-4">
+					<div class="form-group">
+					    <label class="required" for="txtNombre">Empresa</label>
+					    <input type="text" class="form-control neew-control" id="txtNombre" placeholder="">
+					</div>
+				</div>	
 				<div class="col-md-4 col-sm-12 col-lg-4">
-				<div class="form-group">
-				    <label class="required" for="txtNombre">Tipo de cliente</label>
-				    <div class="select">
-					    <select name="select">						
-					    	<option>--</option>
-					    	<option></option>
-					    </select>
+					<div class="form-group">
+					    <label class="required" for="txtNombre">Cargo</label>
+					    <input type="text" class="form-control neew-control" id="txtNombre" placeholder="">
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12 col-sm-12 col-lg-12">
-				<div class="form-group">
-				    <label class="required" for="txtNombre">Comentarios</label>
-				    <textarea rows="5" class="form-control neew-control" id="txtNombre" placeholder="Example input"></textarea>
+			<div class="row">				
+				<div class="col-md-4 col-sm-12 col-lg-4">
+					<div class="form-group">
+					    <label class="required" for="txtNombre">País</label>
+						<div class="select">
+						    <select name="select">						
+						    	<option>--</option>
+						    	<option></option>
+						    </select>
+						</div>
+					</div>
 				</div>
-			</div>				
+					<div class="col-md-4 col-sm-12 col-lg-4">
+					<div class="form-group">
+					    <label class="required" for="txtNombre">Ciudad</label>
+					    <div class="select">
+						    <select name="select">						
+						    	<option>--</option>
+						    	<option></option>
+						    </select>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+		<div class="etapas" id="tab-2" style="display:none;">
+			<div class="row">
+				<div class="col-md-4 col-sm-12 col-lg-4">					
+					<div class="list-group">
+						<button type="button" data-perfil="1" class="item-perfil list-group-item list-group-item-action">Proveedor de la industria</button>
+						<button type="button" data-perfil="2" class="item-perfil list-group-item list-group-item-action">Emprendedor / Inversionista</button>
+						<button type="button" data-perfil="3" class="item-perfil list-group-item list-group-item-action">Director / Gerente</button>
+						<button type="button" data-perfil="4" class="item-perfil list-group-item list-group-item-action">Coordinador</button>
+						<button type="button" data-perfil="5" class="item-perfil list-group-item list-group-item-action">Entrenador / Instructor</button>
+						<button type="button" data-perfil="6" class="item-perfil list-group-item list-group-item-action">Usuario</button>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12 col-lg-4">
+					<div class="form-group">					    
+						<div class="select" id="select-1" style="display:none;">
+						    <select name="select" >
+						    	<option value="0">--</option>						    	
+						    	<option value="1">Accesorios</option>
+								<option value="2">Audio</option>
+								<option value="3">Capacitación</option>
+								<option value="4">Electroestimulación</option>
+								<option value="5">Franquicias</option>
+								<option value="6">Mobiliario</option>
+								<option value="7">Servicio y soporte técnico</option>
+								<option value="8">Software</option>
+								<option value="8">Superficies Deportivas</option>
+								<option value="10">Suplementos</option>
+								<option value="11">Tecnología</option>
+								<option value="12">Uniformes</option>
+								<option value="13">Venta de Equipo Nuevo</option>
+								<option value="14">Venta de Equipo Seminuevo</option>
+
+						    </select>
+						</div>
+						<div class="select" id="select-2" style="display:none;">
+						    <select name="select">	
+						    	<option value="0">--</option>						    	
+						    	<option value="1">Box de Crossfit</option>
+								<option value="2">Centro de Rehabilitación</option>
+								<option value="3">Club Deportivo </option>
+								<option value="4">Condominio / Inmobiliarias</option>
+								<option value="5">Corporativo</option>
+								<option value="6">Escuela de Natación </option>
+								<option value="7">Estudio</option>
+								<option value="8">Gimnasio</option>
+								<option value="9">Gobierno</option>
+								<option value="10">Hotel</option>
+								<option value="11">Universidad</option>
+								<option value="12">Tienda Departamental</option>
+						    </select>
+						</div>
+					</div>
+				</div>					
+			</div>			
+		</div>
+		<div class="etapas" id="tab-3" style="display:none;">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-lg-12">
+					<div class="card-columns">
+  						<div data-value="1" class="card p-3 text-center">
+						    <blockquote class="card-blockquote">
+						      	<p>Accesorios</p>	
+						    </blockquote>
+						</div>
+						<div data-value="2" class="card p-3 text-center">
+						    <blockquote class="card-blockquote">
+						      	<p>Audio</p>	
+						    </blockquote>
+						</div>
+						<div data-value="3" class="card p-3 text-center">
+						    <blockquote class="card-blockquote">
+						      	<p>Capacitación</p>	
+						    </blockquote>
+						</div>
+						<div data-value="4" class="card p-3 text-center">
+						    <blockquote class="card-blockquote">
+						      	<p>Electroestimulación</p>	
+						    </blockquote>
+						</div>
+						<div data-value="5" class="card p-3 text-center">
+						    <blockquote class="card-blockquote">
+						      	<p>Franquicias</p>	
+						    </blockquote>
+						</div>
+						<div data-value="6" class="card p-3 text-center">
+						    <blockquote class="card-blockquote">
+						      	<p>Mobiliario</p>	
+						    </blockquote>
+						</div>
+						<div data-value="7" class="card p-3 text-center">
+						    <blockquote class="card-blockquote">
+						      	<p>Servicio y soporte técnico</p>	
+						    </blockquote>
+						</div>
+						<div data-value="8" class="card p-3 text-center">
+						    <blockquote class="card-blockquote">
+						      	<p>Software</p>	
+						    </blockquote>
+						</div>
+						<div data-value="9" class="card p-3 text-center">
+						    <blockquote class="card-blockquote">
+						      	<p>Superficies Deportivas</p>	
+						    </blockquote>
+						</div>
+						<div data-value="10" class="card p-3 text-center">
+						    <blockquote class="card-blockquote">
+						      	<p>Suplementos</p>	
+						    </blockquote>
+						</div>
+						<div data-value="11" class="card p-3 text-center">
+						    <blockquote class="card-blockquote">
+						      	<p>Tecnología</p>	
+						    </blockquote>
+						</div>
+						<div data-value="12" class="card p-3 text-center">
+						    <blockquote class="card-blockquote">
+						      	<p>Uniformes</p>	
+						    </blockquote>
+						</div>
+						<div data-value="13" class="card p-3 text-center">
+						    <blockquote class="card-blockquote">
+						      	<p>Venta de Equipo Nuevo</p>	
+						    </blockquote>
+						</div>
+						<div data-value="14" class="card p-3 text-center">
+						    <blockquote class="card-blockquote">
+						      	<p>Venta de Equipo Seminuevo</p>	
+						    </blockquote>
+						</div>
+  					</div>
+				</div>
+			</div>
+		</div>
+		<div class="etapas" id="tab-4" style="display:none;">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-lg-12">
+					<div class="card-group">
+  						<div data-value="1" class="card p-3 text-center">
+						    <blockquote class="card-blockquote">
+						      	<p>TRADE SHOW (EVENTO GRATUITO)</p>	
+						    </blockquote>
+						</div>
+						<div data-value="2" class="card p-3 text-center">
+						    <blockquote class="card-blockquote">
+						      	<p>FULL PASS 4to IHRSA MFMX 2017</p>	
+						    </blockquote>
+						</div>
+						<div data-value="3" class="card p-3 text-center">
+						    <blockquote class="card-blockquote">
+						      	<p>1 DÍA DE CONFERENCIAS 4to IHRSA MFMX 2017</p>	
+						    </blockquote>
+						</div>
+						<div data-value="4" class="card p-3 text-center">
+						    <blockquote class="card-blockquote">
+						      	<p>SEMINARIOS 4to IHRSA MFMX 2017</p>	
+						    </blockquote>
+						</div>
+					</div>
+					<div class="card-group">
+						<div data-value="5" class="card p-3 text-center">
+						    <blockquote class="card-blockquote">
+						      	<p>FULL PASS FORO NEEW WELLNESS CORPORATIVO (EVENTO GRATUITO)</p>	
+						    </blockquote>
+						</div>
+						<div data-value="6" class="card p-3 text-center">
+						    <blockquote class="card-blockquote">
+						      	<p>FULL PASS FORO NEEW EMPRENDEDORES (EVENTO GRATUITO)</p>	
+						    </blockquote>
+						</div>
+						<div data-value="7" class="card p-3 text-center">
+						    <blockquote class="card-blockquote">
+						      	<p>FULL PASS FORO NEEW HOSPITALITY (EVENTO GRATUITO)</p>	
+						    </blockquote>
+						</div>
+						<div data-value="8" class="card p-3 text-center">
+						    <blockquote class="card-blockquote">
+						      	<p>FULL PASS FORO NEEW FRANQUICIAS (EVENTO GRATUITO)</p>	
+						    </blockquote>
+						</div>
+					</div>
+					<div class="card-group">
+						<div data-value="9" class="card p-3 text-center">
+						    <blockquote class="card-blockquote">
+						      	<p>FULL PASS FORO NEEW ACUÁTICOS (EVENTO GRATUITO)</p>	
+						    </blockquote>
+						</div>
+						<div data-value="10" class="card p-3 text-center">
+						    <blockquote class="card-blockquote">
+						      	<p>FULL PASS FORO NEEW MUSCULACION (EVENTO GRATUITO)</p>	
+						    </blockquote>
+						</div>
+						<div data-value="11" class="card p-3 text-center">
+						    <blockquote class="card-blockquote">
+						      	<p>FULL PASS FORO 4to CICADAF BY SCU</p>	
+						    </blockquote>
+						</div>
+						<div data-value="12" class="card p-3 text-center">
+						    <blockquote class="card-blockquote">
+						      	<p>WOW FITNESS!</p>	
+						    </blockquote>
+						</div>
+  					</div>
+				</div>
+			</div>
 		</div>
 	</form>
-	<div class="text-center">
-		<button class="btn btn-fuscia">ENVIAR</button>	
+	<div class="text-center" style="margin-top:50px;">
+		<button id="btn-avance" class="btn btn-fuscia">SIGUIENTE</button>	
 	</div>
 	</div>
 </div>
+
+<!-- footer -->
 <div class="container footer">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row nav-links">
   			<ul class="nav">
 				<li style="padding-right:10px;"><img src="assets/scaled-at-75/evento.png"></li>
@@ -179,5 +491,101 @@
 		</div>
 	</div>
 </div>
+<script>
+	$(function(){
+
+		var perfil= 0;
+		var etapa=1;
+
+		$("#btn-menu-close").click(function(){
+			$("#menu-burger").hide();
+		});
+
+		$(".menu-burger-show").click(function(){
+			$("#menu-burger").show();
+		});
+
+		$("#btn-avance").click(function(){
+			if(etapa<4){
+				etapa++;
+				 $(".etapas").hide();
+				 $(".registro-breadcrumb").removeClass('active');
+				switch(etapa){
+					case 1: $("#tab-1").show();
+							$("#bread1").addClass('active');
+							break;
+					case 2: $("#tab-2").show();
+							$("#bread2").addClass('active');
+							break;
+					case 3: $("#tab-3").show();
+							$("#bread3").addClass('active');
+							break;
+					case 4: $("#tab-4").show();
+							$("#bread4").addClass('active');
+							$(this).html('ENVIAR');
+							break;
+				}
+			}
+		});
+
+		$(window).scroll(function(){                          			
+            if ($(this).scrollTop() > 300) {
+                $('#menu-scroll').show();
+            } else {
+                $('#menu-scroll').hide();                
+            }
+        });		
+
+		$('.popover-menu').popover({
+		    placement: 'bottom',
+		    html: true,
+		    trigger: 'manual',
+		    content: function() {
+		    	return $('#submenu').html();
+		    }		    
+		}).on("mouseenter", function () {
+			var _this = this;
+			$(this).popover("show");
+			$(".popover").on("mouseleave", function () {
+			    $(_this).popover('hide');
+			});
+		}).on("mouseleave", function () {
+			var _this = this;
+			setTimeout(function () {
+			    if (!$(".popover:hover").length) {
+			        $(_this).popover("hide");
+			    }
+			}, 300);
+		});
+
+		$(".item-perfil").click(function(){
+			perfil = $(this).data("perfil");
+			$("#select-1").hide();
+			$("#select-2").hide();
+			if (perfil==1) {
+				$("#select-1").show();
+			} else if (perfil==4) {
+				$("#select-2").show();
+			}
+		});
+		
+
+		$("#tab-4 .card").click(function(){
+			$("#tab-4 .card").removeClass("active");
+			$(this).addClass("active");
+		});
+
+		$("#tab-3 .card").click(function(){
+			$(this).toggleClass("active");
+		});
+
+		$(".list-group-item-action").click(function(){
+			$(".list-group-item-action").removeClass("active");
+			$(this).addClass("active");
+		});
+	});
+	
+
+</script>
 </body>
 </html>
