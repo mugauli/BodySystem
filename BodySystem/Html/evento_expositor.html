@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<title>NEEW .:::. Contacto</title>
+	<title>NEEW .:::. Home</title>
 	<!-- styles -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"></li>
 	<link rel="stylesheet" type="text/css" href="css/main.css"></li>	
@@ -12,8 +12,83 @@
 	<script type="text/javascript" src="js/tether.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
-<body class="bgcontacto">
+<body class="bgevento">
+<!-- menu lateral -->
+<div id="menu-burger" style="display:none;">
+	<div id="menu-burger-close"><img id="btn-menu-close" src="assets/btn_close.png"></div>
+	<div id="menu-burger-options">		
+		<a href="#">EXPOSITORES</a>
+		<a href="#">INVERSION</a>
+		<a href="#">SEDE / ¿CÓMO LLEGAR?</a>
+		<a href="#">ALOJAMIENTO</a>
+	</div>
+	<div id="menu-burger-search">
+		<input type="text" id="search">
+	</div>
+</div>
 
+<!-- menu lateral -->
+<div id="submenu" class="neew-submenu" style="display:none;">	
+	<div class="row">
+		<div class="submenu-logo">
+			<a class="navbar-brand"><img src="assets/scaled-at-75/logo4irhsa_color.png"  style="vertical-align:middle;"></a>
+		</div>
+		<div class="col" style="vertical-align:middle;">
+			<div class="row">
+				<div class="col submenu-block">
+					<a href="#">CONFERENCIAS</a>
+				</div>
+				<div class="col submenu-block">
+					<a href="#">MIÉRCOLES 25 DE OCTUBRE</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col submenu-block">
+					<a href="#">SEMINARIOS</a>
+				</div>
+				<div class="col submenu-block">
+					<a href="#">JUEVES 26 DE OCTUBRE</a>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+
+<!-- menu scroll -->
+<div id="menu-scroll" >
+    <nav class="navbar navbar-toggleable-md">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right align-self-center my-2" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand"><img src="assets/scaled-at-75/evento.png"></a>
+        <div class="collapse navbar-collapse flex-column ml-lg-0 ml-3 " id="navbarCollapse">        	 
+            <ul class="navbar-nav ml-auto nav-links">
+                <li class="nav-item">
+                    <a class="nav-link popover-menu" >4to. IHRSA MFMX</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FOROS ESPECIALIZADOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">4to. CICADAF by SCU</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">WOW FITNESS!</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-burger-show" href="#" style="margin-top:-3px;"><img src="assets/scaled-at-75/menu.png"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="#" style="margin-top:-3px;"><img src="assets/scaled-at-75/top_page.png"></a>
+                </li>
+            </ul>
+           
+        </div>
+    </div>
+    </nav>
+</div>
+<!-- menu superior -->
 <nav class="navbar navbar-toggleable-md">
     <div class="container">
         <button class="navbar-toggler navbar-toggler-right align-self-center my-2" type="button" data-toggle="collapse" data-target="#navbarCollapse">
@@ -34,7 +109,7 @@
             </ul>
             <ul class="navbar-nav ml-auto nav-links">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">4to. IHRSA MFMX</a>
+                    <a class="nav-link popover-menu">4to. IHRSA MFMX</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">FOROS ESPECIALIZADOS</a>
@@ -46,18 +121,74 @@
                     <a class="nav-link" href="#">WOW FITNESS!</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="margin-top:-3px;"><img src="assets/scaled-at-75/menu.png"></a>
+                    <a class="nav-link menu-burger-show" id="menu-burger-show" href="#" style="margin-top:-3px;"><img src="assets/scaled-at-75/menu.png"></a>
                 </li>
             </ul>
            
         </div>
     </div>
 </nav>
+
+
+<!-- Contenedor -->
 <div class="container">
-	 Prueba de merge
+	<div class="back-arrow"><img src="assets/back.png"></div>
+	<div class="container-centered">		
+		<h3>GIMNASIOS: LOW COST VS TRADICIONALES</h3>
+		<div class="row" style="margin-top:80px; margin-bottom:-50px;">
+			<div class="col-5">
+				<div class="item-evento">				
+					<div class="foto-evento">
+						<img id="top-image" class="gallery-item" src="assets/foto.png" width="200px">					
+					</div>
+					<div class="bandera-expositor"><img src="assets/flag.png"></div>
+					<div class="expositor-info text-center">										
+						<p class="expositor">LUIS<br>AMOROSO</p>
+						<hr>
+						<p class="evento">4to. IRHSA MFMX</p>
+					</div>
+					<div class="clip-small hora-info text-center">
+						<img src="assets/clock.png">
+						<p class="hora">00:00 p.m.</p>
+					</div>
+					<div class="clip-small fecha-info text-center">
+						<img src="assets/calendar.png">
+						<p class="fecha">25/OCT</p>
+					</div>
+					<div class="logo-neew">
+						<img  src="assets/logo_neew.png" >
+					</div>
+				</div>
+			</div>
+			<div class="col-7">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>			
+		<div class="row" >
+			<div class="col mx-auto text-center">
+				<button class="btn btn-fuscia mr-3 ml-3">COMPRAR CONFERENCIAS</button>	
+				<button class="btn btn-fuscia mr-3 ml-3">COMPRAR FULLPASS</button>	
+				<button class="btn btn-fuscia mr-3 ml-3">DESEO RECIBIR MÁS INFORMACIÓN</button>	
+			</div>
+		</div>
+	</div>
 </div>
+
+<!-- footer -->
 <div class="container footer">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row nav-links">
   			<ul class="nav">
 				<li style="padding-right:10px;"><img src="assets/scaled-at-75/evento.png"></li>
@@ -94,5 +225,59 @@
 		</div>
 	</div>
 </div>
+<script>
+	$(function(){
+
+
+		$("#btn-menu-close").click(function(){
+			$("#menu-burger").hide();
+		});
+
+		$(".menu-burger-show").click(function(){
+			$("#menu-burger").show();
+		});
+
+		$(window).scroll(function(){                          			
+            if ($(this).scrollTop() > 300) {
+                $('#menu-scroll').show();
+            } else {
+                $('#menu-scroll').hide();                
+            }
+        });
+		
+		$('.popover-menu').popover({
+		    placement: 'bottom',
+		    html: true,
+		    trigger: 'manual',
+		    content: function() {
+		    	return $('#submenu').html();
+		    }		    
+		}).on("mouseenter", function () {
+			var _this = this;
+			$(this).popover("show");
+			$(".popover").on("mouseleave", function () {
+			    $(_this).popover('hide');
+			});
+		}).on("mouseleave", function () {
+			var _this = this;
+			setTimeout(function () {
+			    if (!$(".popover:hover").length) {
+			        $(_this).popover("hide");
+			    }
+			}, 300);
+		});
+
+		$('.item-evento').on('mouseenter', function(){
+			var src=$(this).find('.gallery-item').attr('src');
+			$(this).find('.gallery-item').attr('src',src.replace('.png', '_hover.png'));
+		}).on('mouseleave', function(){
+			var src=$(this).find('.gallery-item').attr('src');
+			$(this).find('.gallery-item').attr('src',src.replace('_hover.png','.png'));
+		});
+		
+	});
+	
+
+</script>
 </body>
 </html>

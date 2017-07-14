@@ -262,7 +262,7 @@ select.neew-control:after {
 	font-weight: 700;
 	cursor: pointer;
 	text-align: center;
-	border: 2px solid transparent;
+	border:none;
 }
 
 .btn-fuscia{
@@ -270,24 +270,16 @@ select.neew-control:after {
 	color: var(--white);
 }
 
-
-
 .btn-white{
 	background-color:var(--white);
-	color: var(--fuscia);	
-}
-
-.btn-white:hover{
-	background-color: transparent;
-	color: #fff;
-	border: 2px solid #fff;
+	color: var(--fuscia);
 }
 
 
-.btn-fuscia:hover {
-	background-color: transparent;
+.btn:hover {
+	background-color: var(--cyan);
 	color: var(--white);
-	border: 2px solid var(--fuscia);	
+	border:none;
 }
 
 
@@ -330,19 +322,13 @@ hr {
 }
 
 .bgevento{
-	background-image: url(../assets/img_slider2.png) ;
+	background-image: url(../assets/img_slider.png) ;
 	background-position: top center;
 	background-repeat:  no-repeat;	
 	background-size:  contain;
 	background-color: #000;
 }
 
-.dia_asset{
-	position: absolute;
-    top: -425px;
-    left: -214px;
-    z-index: -1;
-}
 
 .gallery div {
 	position:absolute;
@@ -398,12 +384,12 @@ hr {
 #renglon-0{
 	position: relative;
 	top:220px;
-	left:50px;	
+	left:50px;
 }
 
 #renglon-1{
 	position: relative;
-	left:200px;	
+	left:200px;
 }
 
 #renglon-2{
@@ -459,69 +445,6 @@ hr {
 	left:15px;
 }
 
-.expositor-info{
-	position: relative;
-	top: -145px;
-	left: 102px;	
-	-webkit-clip-path: polygon(100px 0px, 200px 100px, 100px 200px, 0px 100px);
-	clip-path: polygon(100px 0px, 200px 100px, 100px 200px, 0px 100px);	
-	padding:50px 10px;
-	width: 200px;
-	height: 200px;
-}
-
-
-.expositor-info .expositor{
-	font-size: 1rem;
-	margin-bottom: 5px;
-}
-
-.expositor-info hr{
-	width:20%;
-	border-color: #ddd;
-	margin-top: 0px;
-	margin-bottom: 5px;
-}
-
-.expositor-info .evento{
-	color: var(--cyan);
-}
-
-.clip-small{	
-	background-color: var(--dark-gray);	
-	-webkit-clip-path: polygon(75px 0px, 150px 75px, 75px 150px, 0px 75px);
-	clip-path: polygon(75px 0px, 150px 75px, 75px 150px, 0px 75px);
-	width: 150px;
-	height: 150px;
-	padding:50px 45px;	
-}
-
-.clip-small .hora, .clip-small .fecha{
-	font-size: 1rem;
-	margin-top: 5px;
-}
-
-.hora-info{
-	position: absolute;
-	top: -53px;
-	left: 142px;
-}
-.fecha-info{
-	position: absolute;
-	top: 24px;
-	left: 218px;
-}
-
-.logo-neew{
-	position: absolute;
-	top: 165px;
-	left: -5px;	
-}
-
-.back-arrow{
-	float:left;
-	cursor: pointer;
-}
 .clip-rombo {
 	background-color: #000;	
 	-webkit-clip-path: polygon(100px 0px, 200px 100px, 100px 200px, 0px 100px);

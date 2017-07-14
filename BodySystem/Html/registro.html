@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
 	<title>NEEW .:::. Home</title>
 	<!-- styles -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"></li>
@@ -491,13 +493,13 @@
   					</div>
 				</div>
 			</div>
-			<div class="etapas" id="tab-5" style="height:200px;display:none;">
-				<div class="row">
-					<div class="col-md-12 col-sm-12 col-lg-12">
-						<h3>Gracias por su registro!</h3>
-					</div>
+		</div>
+		<div class="etapas" id="tab-5" style="height:200px;display:none;">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-lg-12">
+					<h3>Gracias por su registro!</h3>
 				</div>
-			</div>
+			</div>			
 		</div>
 	</form>
 	<div class="text-center" style="margin-top:50px;">
@@ -697,7 +699,7 @@
 							 			$(".registro-breadcrumb").removeClass('active');
 										$("#tab-5").show();
 										$("#bread5").addClass('active');
-										$(this).html('SALIR');
+										$('#btn-avance').html('SALIR');
 										etapa++;
 							   		} else {
 							   			console.log(data);
@@ -713,7 +715,7 @@
 						break;
 				}
 			} else {
-	            window.location.href = './home.html';
+	            window.location.href = './home.aspx';
 			}
 		});
 
