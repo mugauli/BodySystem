@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<title>NEEW .:::. Contacto</title>
+	<title>NEEW .:::. Home</title>
 	<!-- styles -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"></li>
 	<link rel="stylesheet" type="text/css" href="css/main.css"></li>	
@@ -12,8 +12,83 @@
 	<script type="text/javascript" src="js/tether.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
-<body class="bgcontacto">
+<body class="bgevento">
+<!-- menu lateral -->
+<div id="menu-burger" style="display:none;">
+	<div id="menu-burger-close"><img id="btn-menu-close" src="assets/btn_close.png"></div>
+	<div id="menu-burger-options">		
+		<a href="#">EXPOSITORES</a>
+		<a href="#">INVERSION</a>
+		<a href="#">SEDE / ¿CÓMO LLEGAR?</a>
+		<a href="#">ALOJAMIENTO</a>
+	</div>
+	<div id="menu-burger-search">
+		<input type="text" id="search">
+	</div>
+</div>
 
+<!-- menu lateral -->
+<div id="submenu" class="neew-submenu" style="display:none;">	
+	<div class="row">
+		<div class="submenu-logo">
+			<a class="navbar-brand"><img src="assets/scaled-at-75/logo4irhsa_color.png"  style="vertical-align:middle;"></a>
+		</div>
+		<div class="col" style="vertical-align:middle;">
+			<div class="row">
+				<div class="col submenu-block">
+					<a href="#">CONFERENCIAS</a>
+				</div>
+				<div class="col submenu-block">
+					<a href="#">MIÉRCOLES 25 DE OCTUBRE</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col submenu-block">
+					<a href="#">SEMINARIOS</a>
+				</div>
+				<div class="col submenu-block">
+					<a href="#">JUEVES 26 DE OCTUBRE</a>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+
+<!-- menu scroll -->
+<div id="menu-scroll" >
+    <nav class="navbar navbar-toggleable-md">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right align-self-center my-2" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand"><img src="assets/scaled-at-75/evento.png"></a>
+        <div class="collapse navbar-collapse flex-column ml-lg-0 ml-3 " id="navbarCollapse">        	 
+            <ul class="navbar-nav ml-auto nav-links">
+                <li class="nav-item">
+                    <a class="nav-link popover-menu" >4to. IHRSA MFMX</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FOROS ESPECIALIZADOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">4to. CICADAF by SCU</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">WOW FITNESS!</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-burger-show" href="#" style="margin-top:-3px;"><img src="assets/scaled-at-75/menu.png"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="#" style="margin-top:-3px;"><img src="assets/scaled-at-75/top_page.png"></a>
+                </li>
+            </ul>
+           
+        </div>
+    </div>
+    </nav>
+</div>
+<!-- menu superior -->
 <nav class="navbar navbar-toggleable-md">
     <div class="container">
         <button class="navbar-toggler navbar-toggler-right align-self-center my-2" type="button" data-toggle="collapse" data-target="#navbarCollapse">
@@ -34,7 +109,7 @@
             </ul>
             <ul class="navbar-nav ml-auto nav-links">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">4to. IHRSA MFMX</a>
+                    <a class="nav-link popover-menu">4to. IHRSA MFMX</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">FOROS ESPECIALIZADOS</a>
@@ -46,103 +121,157 @@
                     <a class="nav-link" href="#">WOW FITNESS!</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="margin-top:-3px;"><img src="assets/scaled-at-75/menu.png"></a>
+                    <a class="nav-link menu-burger-show" id="menu-burger-show" href="#" style="margin-top:-3px;"><img src="assets/scaled-at-75/menu.png"></a>
                 </li>
             </ul>
            
         </div>
     </div>
 </nav>
+
+
+<!-- Contenedor -->
 <div class="container">
-	<div class="container-centered">
-	<h2>CONTACTO</h2>
-	<form>
-		<div class="row">
-			<div class="col-md-4 col-sm-12 col-lg-4">
-				<div class="form-group">
-				    <label class="required" for="txtNombre">Nombre(s)</label>
-				    <input type="text" class="form-control neew-control" id="txtNombre" placeholder="Example input">
+	<h3>4to. IHRSA MFMX</h3>
+	<h5>CONFERENCIAS DEL DIA 25 DE OCTUBRE 2017</h5>	
+	<section id="conferencias">
+		<div id="renglon-0">
+			<img src="assets/rectangle_white.png" class="dia_asset" width="40%">
+			<img src="assets/logo4irhsa_color.png"  style="vertical-align:middle;margin-left:-20px;">
+		</div>
+		<div id="renglon-1">
+			<div class="item-evento">				
+				<div class="foto-evento">
+					<img id="top-image" class="gallery-item" src="assets/foto.png" width="200px">					
 				</div>
-			</div>
-			<div class="col-md-4 col-sm-12 col-lg-4">
-				<div class="form-group">
-				    <label class="required" for="txtNombre">Apellido paterno</label>
-				    <input type="text" class="form-control neew-control" id="txtNombre" placeholder="Example input">
+				<div class="bandera-expositor"><img src="assets/flag.png"></div>
+				<div class="info-evento clip-evento fuscia">
+					<div class="arrow">&nbsp;</div>
+					<p class="hora">00:00 A.M.</p>
+					<p class="expositor">Nombre Apellido Apellido</p>
+					<p class="titulo">Título de la conderencia</p>
 				</div>
+
 			</div>
-				<div class="col-md-4 col-sm-12 col-lg-4">
-				<div class="form-group">
-				    <label class="required" for="txtNombre">Apellido materno</label>
-				    <input type="text" class="form-control neew-control" id="txtNombre" placeholder="Example input">
+			<div class="item-evento">
+				<div class="foto-evento">
+					<img id="top-image" class="gallery-item" src="assets/foto.png" width="200px">
+				</div>
+				<div class="bandera-expositor"><img src="assets/flag.png"></div>
+				<div class="info-evento clip-evento cyan">
+					<div class="arrow">&nbsp;</div>
+					<p class="hora">00:00 A.M.</p>
+					<p class="expositor">Nombre Apellido Apellido</p>
+					<p class="titulo">Título de la conderencia</p>
+				</div>				
+			</div>
+			<div class="item-evento">
+				<div class="foto-evento">
+					<img id="top-image" class="gallery-item" src="assets/foto.png" width="200px">
+				</div>
+				<div class="bandera-expositor"><img src="assets/flag.png"></div>
+				<div class="info-evento clip-evento fuscia">
+					<div class="arrow">&nbsp;</div>
+					<p class="hora">00:00 A.M.</p>
+					<p class="expositor">Nombre Apellido Apellido</p>
+					<p class="titulo">Título de la conderencia</p>
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-4 col-sm-12 col-lg-4">
-				<div class="form-group">
-				    <label class="required" for="txtNombre">Correo electrónico</label>
-				    <input type="text" class="form-control neew-control" id="txtNombre" placeholder="Example input">
+		<div id="renglon-2">
+			<div class="item-evento">
+				<div class="foto-evento">
+					<img id="top-image" class="gallery-item" src="assets/foto.png" width="200px">
+				</div>
+				<div class="bandera-expositor"><img src="assets/flag.png"></div>
+				<div class="info-evento clip-evento cyan">
+					<div class="arrow">&nbsp;</div>
+					<p class="hora">00:00 A.M.</p>
+					<p class="expositor">Nombre Apellido Apellido</p>
+					<p class="titulo">Título de la conderencia</p>
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-12 col-lg-4">
-				<div class="form-group">
-				    <label class="required" for="txtNombre">Confirmar correo electrónico</label>
-				    <input type="text" class="form-control neew-control" id="txtNombre" placeholder="Example input">
+			<div class="item-evento">
+				<div class="foto-evento">
+					<img id="top-image" class="gallery-item" src="assets/foto.png" width="200px">
+				</div>
+				<div class="bandera-expositor"><img src="assets/flag.png"></div>
+				<div class="info-evento clip-evento fuscia">
+					<div class="arrow">&nbsp;</div>
+					<p class="hora">00:00 A.M.</p>
+					<p class="expositor">Nombre Apellido Apellido</p>
+					<p class="titulo">Título de la conderencia</p>
 				</div>
 			</div>
-				<div class="col-md-4 col-sm-12 col-lg-4">
-				<div class="form-group">
-				    <label class="required" for="txtNombre">Teléfono</label>
-				    <input type="text" class="form-control neew-control" id="txtNombre" placeholder="Example input">
+			<div class="item-evento">
+				<div class="foto-evento">
+					<img id="top-image" class="gallery-item" src="assets/foto.png" width="200px">
 				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4 col-sm-12 col-lg-4">
-				<div class="form-group">
-				    <label class="required" for="txtNombre">Ciudad</label>
-				    <input type="text" class="form-control neew-control" id="txtNombre" placeholder="Example input">
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-12 col-lg-4">
-				<div class="form-group">
-				    <label class="required" for="txtNombre">Asunto</label>
-					<div class="select">
-					    <select name="select">						
-					    	<option>--</option>
-					    	<option></option>
-					    </select>
-					</div>
-				</div>
-			</div>
-				<div class="col-md-4 col-sm-12 col-lg-4">
-				<div class="form-group">
-				    <label class="required" for="txtNombre">Tipo de cliente</label>
-				    <div class="select">
-					    <select name="select">						
-					    	<option>--</option>
-					    	<option></option>
-					    </select>
-					</div>
+				<div class="bandera-expositor"><img src="assets/flag.png"></div>
+				<div class="info-evento clip-evento cyan">
+					<div class="arrow">&nbsp;</div>
+					<p class="hora">00:00 A.M.</p>
+					<p class="expositor">Nombre Apellido Apellido</p>
+					<p class="titulo">Título de la conderencia</p>
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-12 col-sm-12 col-lg-12">
-				<div class="form-group">
-				    <label class="required" for="txtNombre">Comentarios</label>
-				    <textarea rows="5" class="form-control neew-control" id="txtNombre" placeholder="Example input"></textarea>
+		<div id="renglon-3">
+			<div class="item-evento">
+				<div class="foto-evento">
+					<img id="top-image" class="gallery-item" src="assets/foto.png" width="200px">
 				</div>
-			</div>				
+				<div class="bandera-expositor"><img src="assets/flag.png"></div>
+				<div class="info-evento clip-evento cyan">
+					<div class="arrow">&nbsp;</div>
+					<p class="hora">00:00 A.M.</p>
+					<p class="expositor">Nombre Apellido Apellido</p>
+					<p class="titulo">Título de la conderencia</p>
+				</div>
+			</div>
+			<div class="item-evento">
+				<div class="foto-evento">
+					<img id="top-image" class="gallery-item" src="assets/foto.png" width="200px">
+				</div>
+				<div class="bandera-expositor"><img src="assets/flag.png"></div>
+				<div class="info-evento clip-evento fuscia">
+					<div class="arrow">&nbsp;</div>
+					<p class="hora">00:00 A.M.</p>
+					<p class="expositor">Nombre Apellido Apellido</p>
+					<p class="titulo">Título de la conderencia</p>
+				</div>
+			</div>
+			<div class="item-evento">
+				<div class="foto-evento">
+					<img id="top-image" class="gallery-item" src="assets/foto.png" width="200px">
+				</div>
+				<div class="bandera-expositor"><img src="assets/flag.png"></div>
+				<div class="info-evento clip-evento cyan">
+					<div class="arrow">&nbsp;</div>
+					<p class="hora">00:00 A.M.</p>
+					<p class="expositor">Nombre Apellido Apellido</p>
+					<p class="titulo">Título de la conderencia</p>
+				</div>
+			</div>
+			<div class="item-evento">
+				<div class="foto-evento">
+					<img id="top-image" class="gallery-item" src="assets/foto.png" width="200px">
+				</div>
+				<div class="bandera-expositor"><img src="assets/flag.png"></div>
+				<div class="info-evento clip-evento fuscia">
+					<div class="arrow">&nbsp;</div>
+					<p class="hora">00:00 A.M.</p>
+					<p class="expositor">Nombre Apellido Apellido</p>
+					<p class="titulo">Título de la conderencia</p>
+				</div>
+			</div>
 		</div>
-	</form>
-	<div class="text-center">
-		<button class="btn btn-fuscia">ENVIAR</button>	
-	</div>
-	</div>
+	</section>		
 </div>
+
+<!-- footer -->
 <div class="container footer">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row nav-links">
   			<ul class="nav">
 				<li style="padding-right:10px;"><img src="assets/scaled-at-75/evento.png"></li>
@@ -179,5 +308,59 @@
 		</div>
 	</div>
 </div>
+<script>
+	$(function(){
+
+
+		$("#btn-menu-close").click(function(){
+			$("#menu-burger").hide();
+		});
+
+		$(".menu-burger-show").click(function(){
+			$("#menu-burger").show();
+		});
+
+		$(window).scroll(function(){                          			
+            if ($(this).scrollTop() > 300) {
+                $('#menu-scroll').show();
+            } else {
+                $('#menu-scroll').hide();                
+            }
+        });
+		
+		$('.popover-menu').popover({
+		    placement: 'bottom',
+		    html: true,
+		    trigger: 'manual',
+		    content: function() {
+		    	return $('#submenu').html();
+		    }		    
+		}).on("mouseenter", function () {
+			var _this = this;
+			$(this).popover("show");
+			$(".popover").on("mouseleave", function () {
+			    $(_this).popover('hide');
+			});
+		}).on("mouseleave", function () {
+			var _this = this;
+			setTimeout(function () {
+			    if (!$(".popover:hover").length) {
+			        $(_this).popover("hide");
+			    }
+			}, 300);
+		});
+
+		$('.item-evento').on('mouseenter', function(){
+			var src=$(this).find('.gallery-item').attr('src');
+			$(this).find('.gallery-item').attr('src',src.replace('.png', '_hover.png'));
+		}).on('mouseleave', function(){
+			var src=$(this).find('.gallery-item').attr('src');
+			$(this).find('.gallery-item').attr('src',src.replace('_hover.png','.png'));
+		});
+		
+	});
+	
+
+</script>
 </body>
 </html>
