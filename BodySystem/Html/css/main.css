@@ -460,6 +460,10 @@ hr {
 }
 
 .expositor-info{
+	background-image: url(../assets/rombo.png);
+	background-repeat: no-repeat;
+	background-position: 2px 2px;
+	background-size: 195px 195px;
 	position: relative;
 	top: -145px;
 	left: 102px;	
