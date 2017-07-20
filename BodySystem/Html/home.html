@@ -133,6 +133,7 @@
 <!-- Contenedor -->
 <div class="container">
 	<section>
+		<img src="assets/arrow_cf.png" class="home_asset">					
 		<div class="row py-2" style="margin-top:200px;">
 			<div class="col-md-12">
 				<img src="assets/movement.png">
@@ -142,12 +143,17 @@
 			<div class="col-md-12">
 				<span class="fg-white"><b>LIBERA EL ATLETA </b></span>
 				<span class="fg-white">QUE LLEVAS DENTRO... </span>
-				<span class="fg-fuscia"><small><b>MÁS INFO</b></small></span>
+				<span class="fg-fuscia"><a href="#" class="fg-fuscia"><small class="fg-fuscia"><b>MÁS INFO</b></small></a></span>
 			</div>
 		</div>
 		<div class="row py-2">
 			<div class="col-md-12">
-				<img src="assets/barras.png">
+				<ul class="nav" id="bg-slider">
+					<li data-bg="img_slider2.png">&nbsp;</li>
+					<li data-bg="bgcontacto.png">&nbsp;</li>
+					<li data-bg="img_slider2.png">&nbsp;</li>
+					<li data-bg="bgcontacto.png">&nbsp;</li>
+				</ul>
 			</div>
 		</div>
 		<div class="row py-2">
@@ -171,19 +177,72 @@
 		</div>
 	</section>
 	<section>
-		<div class="row py-2" style="margin-top:100px;">
+		<div class="row py-2" style="margin-top:80px;">
 			<div class="col-md-12">
 				<h3 class="fg-white">PATROCINADORES</h3>
 			</div>
 		</div>
 		<div class="row py-3">
 			<div class="col-md-12 text-center">
-				<img class="" src="assets/sponsors.png" width="919" height="305">
+				<div id="sponsors1">
+					<div class="item-sponsor gallery-item">
+						<img  src="assets/logo_neew.png" >
+					</div>				
+					<div class="item-sponsor gallery-item">
+						<img  src="assets/logo_neew.png" >
+					</div>				
+					<div class="item-sponsor gallery-item">
+						<img  src="assets/logo_neew.png" >
+					</div>				
+					<div class="item-sponsor gallery-item">
+						<img  src="assets/logo_neew.png" >
+					</div>
+					<div class="item-sponsor gallery-item">
+						<img  src="assets/logo_neew.png" >
+					</div>				
+				</div>
+				<div id="sponsors2">
+					<div class="item-sponsor gallery-item">
+						<img  src="assets/logo_neew.png" >
+					</div>				
+					<div class="item-sponsor gallery-item">
+						<img  src="assets/logo_neew.png" >
+					</div>				
+					<div class="item-sponsor gallery-item">
+						<img  src="assets/logo_neew.png" >
+					</div>				
+					<div class="item-sponsor gallery-item">
+						<img  src="assets/logo_neew.png" >
+					</div>
+					<div class="item-sponsor gallery-item">
+						<img  src="assets/logo_neew.png" >
+					</div>				
+					<div class="item-sponsor gallery-item">
+						<img  src="assets/logo_neew.png" >
+					</div>
+				</div>
+				<div id="sponsors3">
+					<div class="item-sponsor gallery-item">
+						<img  src="assets/logo_neew.png" >
+					</div>				
+					<div class="item-sponsor gallery-item">
+						<img  src="assets/logo_neew.png" >
+					</div>				
+					<div class="item-sponsor gallery-item">
+						<img  src="assets/logo_neew.png" >
+					</div>				
+					<div class="item-sponsor gallery-item">
+						<img  src="assets/logo_neew.png" >
+					</div>
+					<div class="item-sponsor gallery-item">
+						<img  src="assets/logo_neew.png" >
+					</div>				
+				</div>
 			</div>
 		</div>
 	</section>
 		<section>
-		<div class="row py-2" style="margin-top:150px;">
+		<div class="row py-2" style="margin-bottom:10px;">
 			<div class="col-md-12">
 				<h3 class="fg-white">HIGHLIGHTS IHRSA MFMX 2016</h3>
 			</div>
@@ -331,6 +390,11 @@
 			        $(_this).popover("hide");
 			    }
 			}, 300);
+		});
+
+		$("#bg-slider li").on('click', function(){
+			var background=$(this).data('bg');
+			$('.bghome').css('background-image','url(./assets/'+background+')');
 		});
 		
 	});

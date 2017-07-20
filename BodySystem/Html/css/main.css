@@ -322,7 +322,7 @@ hr {
 }
 
 .bghome{
-	background-image: url(../assets/bghome.png) ;
+	background-image: url(../assets/img_slider2.png) ;
 	background-position: top center;
 	background-repeat:  no-repeat;	
 	background-size:  contain;
@@ -336,6 +336,15 @@ hr {
 	background-size:  contain;
 	background-color: #000;
 }
+
+.home_asset{
+	position: absolute;
+    top: -430px;    
+    left:-110px;
+    z-index: -1;
+}
+}
+
 
 .dia_asset{
 	position: absolute;
@@ -378,6 +387,41 @@ hr {
 	top: 380px;
 	cursor: pointer;
 }
+
+#sponsors1{
+	position: relative;
+	top:50px;	
+}
+#sponsors2{
+	position: relative;	
+	left:1px;	
+	top: -30px;
+}
+#sponsors3{
+	position: relative;	
+	top: -110px;
+}
+
+
+.item-sponsor{
+	display: inline-grid;
+	cursor:pointer;
+}
+
+#bg-slider{
+	margin-top: 0px;
+}
+#bg-slider li{
+	width:50px;
+	border-bottom: 2px #666 solid;
+	margin-right: 5px;
+	cursor: pointer;
+}
+#bg-slider li:hover{
+	border-bottom: 2px #ccc solid;
+}
+
+
 
 .item-evento{
 	display: inline-grid;
